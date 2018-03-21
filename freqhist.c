@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 #define MAXLEN 26 //max length of input word
 
 /*Program to perform histogram of character frequencies in input text 
@@ -28,7 +29,7 @@ int main()
 	{
 		for(int i = 0; i < MAXLEN; i++)
 		{
-			if(c == alphabet[i])
+			if(tolower(c) == alphabet[i])
 			{
 				len_mas[i]++;
 			}
